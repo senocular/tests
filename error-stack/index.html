@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Error stacks</title>
+</head>
+<body>
+
+<p>Generating an error and outputing the stack to the console in an effort to see the formats used by different browsers.</p>
+
+<script>
+function high () {
+  mid()
+}
+
+function mid () {
+  low()
+}
+
+function low () {
+  console.log(new Error().stack)
+}
+
+high()
+</script>
+
+</body>
+</html>
